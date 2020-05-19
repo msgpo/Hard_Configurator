@@ -9,25 +9,25 @@ Forked from [AndyFul](https://github.com/AndyFul/Hard_Configurator).
 * 5.1.1.1
 
 
-### Intro
+### Signatures
 
 From version 4.1.1.1 (July 2019) Hard_Configurator installer and all its executables are signed with "Certum Code Signing CA SHA2" certificate (Open Source Developer Andrzej Pluta).
 
 **WARNING**
+
 Windows built-in Software Restriction Policies are incompatible with Child Account activated on Windows 10 via Microsoft Family Safety.
 Such an account disables most SRP restrictions. This issue is persistent even after removing Child Account. To recover SRP functionality, Windows has to be refreshed or reset.
 
-The version 4.0.0.0 was corrected in the October 2018 to match Microsoft requirements, because on the beginning of Otcober
-it was flagged as a hack-tool by Microsoft. The detection was related to ConfigureDefender ver. 1.0.1.1 which was installed with
-Hard_Configurator. ConfigureDefender ver. 1.0.1.1 was considered as a hack-tool by Microsoft, because it had an option to disable
-Windows Defender real-time protection. The corrected version of Hard_Configurator has been analyzed and accepted by Microsoft.
+The version 4.0.0.0 was corrected in the October 2018 to match Microsoft requirements, because on the beginning of October it was flagged as a hack-tool by Microsoft. The detection was related to ConfigureDefender ver. 1.0.1.1 which was installed with Hard_Configurator. ConfigureDefender ver. 1.0.1.1 was considered as a hack-tool by Microsoft, because it had an option to disable Windows Defender real-time protection. The corrected version of Hard_Configurator has been analyzed and approved by Microsoft.
 
 
-## How to use the Program
+## How to use the Hard_Configurator
 
 GUI to manage Software Restriction Policies (SRP) and harden Windows Home editions (Windows Vista at least).
-The most comprehensive information about Hard_Configurator (including the manual, FAQ, articles about SRP, etc.), is available on https://hard-configurator.com/, thanks to the cooperative work of my friends from Malwaretips forum. There is also an informative Malwaretips thread about Hard_Configurator: https://malwaretips.com/threads/hard_configurator-windows-hardening-configurator.66416/
-.
+The most comprehensive information about Hard_Configurator (including the manual, FAQ, articles about SRP, etc.), is available on https://hard-configurator.com/, thanks to the cooperative work of my friends from Malwaretips forum. There is also an informative [Malwaretips thread about Hard_Configurator](https://malwaretips.com/threads/hard_configurator-windows-hardening-configurator.66416/).
+
+
+### Overview
 
 This program can configure Windows built-in security to harden the system. When you close Hard_Configurator it closes all its processes. The real-time protection comes from the reconfigured Windows settings.
 Hard_Configurator can be seen as a Medium Integrity Level smart default-deny setup, which is based on SRP + Application Reputation Service (forced SmartScreen) + Windows hardening settings (restricting vulnerable features).
@@ -75,18 +75,18 @@ Most of the above tasks can be made by hand using Windows regedit. Anyway, with 
 Forcing SmartScreen check can protect the user, when normally the SmartScreen Filter (in Windows 8+) is bypassed.
 That can happen if you have got the executable file (BAT, CMD, COM, CPL, DLL, EXE, JSE, MSI, OCX, PIF, SCR or VBE) when using:
 
-* the downloader or torrent application (EagleGet, utorrent etc.)
-* container format file (zip, 7z, arj, rar, etc.), with the exception of ZIP built-in Windows management.
+* The downloader or torrent application (EagleGet, utorrent etc.)
+* Container format file (zip, 7z, arj, rar, etc.), with the exception of ZIP built-in Windows management.
 * CD/DVD/Blue-ray disc
 * CD/DVD/Blue-ray disc image (iso, bin, etc.)
-* non-NTFS USB storage device (FAT32 pendrive, FAT32 USB disk)
+* Non-NTFS USB storage device (FAT32 pendrive, FAT32 USB disk)
 * Memory Card
 
 so the file does not have the proper Alternate Data Stream attached (Mark Of The Web).
 
 Forcing the SmartScreen check, can protect in a smart way file execution with Administrative Rights in the User Space. It is a complementary to SRP, that covers file execution as standard user. If "Run as administrator" option is removed from the Explorer right-click context menu, while SRP and "Run As SmartScreen" are both activated, then the user can only execute files that are whitelisted or checked by SmartScreen Application on the run.
 
-If SRP is deactivated, then Hard_Configurator options can be changed to force SmartScreen check without invoking Administrative Rights. This change adds "Run By Smartscreen" option to Explorer context menu.
+If SRP is deactivated, then Hard_Configurator options can be changed to force SmartScreen check without invoking Administrative Rights. This change adds `"Run By Smartscreen"` option to Explorer context menu.
 
 Hard_Configurator is based on Windows built-in security, so there is no need to turn off the program restrictions to install Windows Updates, Universal Applications from Windows Store, and perform system Scheduled Tasks.
 
