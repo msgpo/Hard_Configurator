@@ -1,8 +1,19 @@
-## Hard_Configurator ver. 5.0.0.0
+# Hard_Configurator
+
+Forked from [AndyFul](https://github.com/AndyFul/Hard_Configurator).
+
+### Latest stable
+* 5.0.0.0
+
+### Latest Beta
+* 5.1.1.1
+
+
+### Intro
 
 From version 4.1.1.1 (July 2019) Hard_Configurator installer and all its executables are signed with "Certum Code Signing CA SHA2" certificate (Open Source Developer Andrzej Pluta).
 
-WARNING!!!
+**WARNING**
 Windows built-in Software Restriction Policies are incompatible with Child Account activated on Windows 10 via Microsoft Family Safety.
 Such an account disables most SRP restrictions. This issue is persistent even after removing Child Account. To recover SRP functionality, Windows has to be refreshed or reset.
 
@@ -12,14 +23,14 @@ Hard_Configurator. ConfigureDefender ver. 1.0.1.1 was considered as a hack-tool 
 Windows Defender real-time protection. The corrected version of Hard_Configurator has been analyzed and accepted by Microsoft.
 
 
-PROGRAM DESCRIPTION.
+## How to use the Program
 
 GUI to manage Software Restriction Policies (SRP) and harden Windows Home editions (Windows Vista at least).
 The most comprehensive information about Hard_Configurator (including the manual, FAQ, articles about SRP, etc.), is available on https://hard-configurator.com/, thanks to the cooperative work of my friends from Malwaretips forum. There is also an informative Malwaretips thread about Hard_Configurator: https://malwaretips.com/threads/hard_configurator-windows-hardening-configurator.66416/
 .
 
 This program can configure Windows built-in security to harden the system. When you close Hard_Configurator it closes all its processes. The real-time protection comes from the reconfigured Windows settings.
-Hard_Configurator can be seen as a Medium Integrity Level smart default-deny setup, which is based on SRP + Application Reputation Service (forced SmartScreen) + Windows hardening settings (restricting vulnerable features).  
+Hard_Configurator can be seen as a Medium Integrity Level smart default-deny setup, which is based on SRP + Application Reputation Service (forced SmartScreen) + Windows hardening settings (restricting vulnerable features).
 Hard_Configurator makes changes in Windows Registry to accomplish the tasks enumerated below:
 
 1. Enabling Software Restriction Policies in Windows Home editions.
@@ -28,7 +39,7 @@ Hard_Configurator makes changes in Windows Registry to accomplish the tasks enum
 4. Blocking vulnerable system executables via SRP (Bouncer black list).
 5. Protecting (deny execution) writable subfolders in "C:\Windows" folder (via SRP).
 6. Restricting shortcut execution to some folders only (via SRP).
-7. Enabling Windows Defender advanced settings, like PUA protection, ASR rules, Network Protection etc. 
+7. Enabling Windows Defender advanced settings, like PUA protection, ASR rules, Network Protection etc.
 8. Protecting against weaponized documents, when MS Office and Adobe Acrobat Reader XI/DC are used to open them.
 9. Enabling "Run as administrator" for MSI files.
 10. Hardening Windows Firewall by blocking the Internet access to LOLBins.
@@ -64,12 +75,12 @@ Most of the above tasks can be made by hand using Windows regedit. Anyway, with 
 Forcing SmartScreen check can protect the user, when normally the SmartScreen Filter (in Windows 8+) is bypassed.
 That can happen if you have got the executable file (BAT, CMD, COM, CPL, DLL, EXE, JSE, MSI, OCX, PIF, SCR or VBE) when using:
 
-* the downloader or torrent application (EagleGet, utorrent etc.);
+* the downloader or torrent application (EagleGet, utorrent etc.)
 * container format file (zip, 7z, arj, rar, etc.), with the exception of ZIP built-in Windows management.
-* CD/DVD/Blue-ray disc;
-* CD/DVD/Blue-ray disc image (iso, bin, etc.);
-* non-NTFS USB storage device (FAT32 pendrive, FAT32 USB disk);
-* Memory Card;
+* CD/DVD/Blue-ray disc
+* CD/DVD/Blue-ray disc image (iso, bin, etc.)
+* non-NTFS USB storage device (FAT32 pendrive, FAT32 USB disk)
+* Memory Card
 
 so the file does not have the proper Alternate Data Stream attached (Mark Of The Web).
 
@@ -79,5 +90,14 @@ If SRP is deactivated, then Hard_Configurator options can be changed to force Sm
 
 Hard_Configurator is based on Windows built-in security, so there is no need to turn off the program restrictions to install Windows Updates, Universal Applications from Windows Store, and perform system Scheduled Tasks.
 
-Contact: 
-hardconfigurator@gmail.com
+
+
+## Original Author Contact
+
+###  Via eMail
+* `hardconfigurator [at] gmail.com`
+
+
+### Via MalwareTips Forum
+* [Hard_Configurator MalwareTips Forum Thread](https://malwaretips.com/threads/hard_configurator-windows-hardening-configurator.66416/)
+
