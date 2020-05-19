@@ -1,0 +1,37 @@
+IsPowerShellBlocked
+IsPowerShell_iseBlocked
+
+;********* Beginning of ini section *********
+
+SKIN=MAmbre
+ListColor=14671585
+White List
+Skip DLLs
+ON
+ON
+OFF
+ON
+
+OFF
+OFF
+OFF
+ON
+OFF
+ON
+OFF
+OFF3
+ON
+ON1
+ON
+OFF
+ON
+ON
+END
+
+;********* Beginning of profile info section *********
+
+Recommended settings (SRP included) + allow EXE files.
+
+This profile is prepared to work on Windows 7 and Vista with Avast antivirus set to Hardened Aggressive mode. 
+Hard_Configurator settings allow running any EXE file in the Userspace, but those files are then checked by Avast reputation cloud.
+Hard_Configurator applies Windows hardening and also default-deny restrictions for scripts and other dangerous files via SRP. 

@@ -1,0 +1,23 @@
+<Whitelist By Path> button opens ADD / REMOVE / EDIT window for file / folder
+whitelisting by path. This can be useful, when programs are located in User Space
+(outside the folders: 'Windows', 'Program Files', and 'Program Files (x86)' ). 
+Yet, User Space is not protected by UAC, so in theory, the malware could bypass
+SRP, when running from the whitelisted path. Whitelisting popular locations in the
+%USERPROFILE% is especially dangerous (AppData\Local, AppData\Local\Temp, 
+Music, Pictures, Videos, Documents, Desktop, Downloads, etc.). 
+The safer method (but less convenient) is whitelisting files by hash. 
+Whitelisting by path a shortcut (LNK file) or a path with wildcards, is only possible
+when using <Add Path*Wildcards> option. 
+The Whitelist can be saved into the file, when using <Save Load> button on the right
+side of the Whitelist buttons.
+
+The users with installed Avast Antivirus set to Hardened Aggressive mode, can apply
+'Allow EXE and TMP' option. The executables (*.exe and *.tmp) will be checked by
+Avast Reputation Cloud and ignored by Hard_Configurator in the User Space.
+The above solution is both very safe and usable.
+
+WARNING!!!
+It is forbidden to adopt environment variables when using <Add Path*Wildcards> option
+to whitelist the paths! 
+
+See 'Hard_Configurator - Manual.pdf' for more help.

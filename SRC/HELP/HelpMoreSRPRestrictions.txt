@@ -1,0 +1,4 @@
+<MORE SRP ...> button opens a menu with additional SRP options. 
+The numbers on the left of this button, show the actual status of those
+options. For example #11 means that the first and the second options are
+set to 'ON'.

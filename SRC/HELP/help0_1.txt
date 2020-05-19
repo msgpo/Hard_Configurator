@@ -1,0 +1,14 @@
+6. There are also important green buttons <Switch OFF/ON SRP> and <Switch OFF/ON Restrictions>. Any green button can switch OFF the settings in the panel above, but remembers the last settings in that panel. They can be restored when pressing the green button the second time. But, there is one requirement - meanwhile, you cannot turn on any setting in the panel. If you prefer to turn on some settings in the panel, they overwrite the previous settings.
+
+If you <Switch OFF/ON SRP> but do not <APPLY CHANGES>, then only SRP Default Security Level will be switched and applied (other changed settings require <APPLY CHANGES> to work). That can be used when you want to disable protection temporarily, perform some tasks on the computer, and quickly restore the protection.
+
+7. The red button <APPLY CHANGES> works as follows:
+A) If required, then 'RESTART COMPUTER' alert is shown, and the changes related to drivers are applied after restarting the computer.
+B) If required, then LOG OFF alert is shown, and the user can apply configuration changes by logOFF and logON again.
+C) In Windows 10, the option to refresh Windows Explorer is enabled, as an alternative to B). 
+D) If additional actions are not required, then only a splash window 'FINISHED' is shown.
+
+8. If some buttons are grayed out, it means that those options are not supported by the Operating System or actual settings do not allow applying them. 
+<No Removable Disks Exec.> option is turned off permanently due to reported by users, invalid detection of fixed disks.
+
+click the NEXT button to continue ...

@@ -1,0 +1,20 @@
+[Info]
+Title = Mid-Gray
+Auther = Joscpe
+
+[color]
+background=0xDEDFE0
+button=0x8c8c8c
+mouseover=0xb3b3b3
+fontcolor=0xebebeb
+ListwievColor=0xDADEE1
+
+
+[settings]
+size=25
+
+[icon]
+style=Silver
+Isize=36
+adjustleft=19
+adjustdown=13

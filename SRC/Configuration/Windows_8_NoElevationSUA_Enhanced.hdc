@@ -1,0 +1,59 @@
+IsPowerShellBlocked
+IsPowerShell_iseBlocked
+Isbitsadmin.exeBlocked
+IsCsc.exeBlocked
+Ishh.exeBlocked
+Isieexec.exeBlocked
+Isiexplore.exeBlocked
+IsInstallUtil.exeBlocked
+IsMsBuild.exeBlocked
+Ismshta.exeBlocked
+IsPresentationHost.exeBlocked
+Isreg.exeBlocked
+Isregini.exeBlocked
+IsRegSvcs.exeBlocked
+Iswmic.exeBlocked
+Isbash.exeBlocked
+IsRegAsm*Blocked
+Isschtasks.exeBlocked
+Iswindbg.exeBlocked
+Isforfiles.exeBlocked
+Issc.exeBlocked
+
+;********* Beginning of ini section *********
+
+SKIN=MAmbre
+ListColor=14671585
+White List
+Skip DLLs
+ON
+ON
+OFF
+ON
+
+ON
+ON
+Administrator
+ON
+OFF
+ON
+OFF
+ON
+ON
+ON1
+ON
+OFF
+ON
+OFF
+END
+
+;********* Beginning of profile info section *********
+
+This setting profile is prepared for Windows 8 and higher versions, as a two account security solution: daily work on the Standard User Account (SUA), and admin work on Administrator Account (AA). 
+
+Adopted restrictions prevent applications from (auto)elevating when started as standard user on SUA. The user can open documents, media, photos, etc., and run previously installed applications. But, there is no possibility to run/install new programs when working on SUA. 
+
+Only system processes and system scheduled tasks can run with high privileges when working on such protected SUA. So, all the admin work like: installing & updating programs, running programs with elevation, etc., must be done on Administrator Account. 
+
+This profile, also applies all Recommended Settings (including SRP) and additionally blocks some vulnerable sponsors (via SRP)  which are commonly abused.
+Rarely, those sponsors can be used by the legal software, so it is recommended to look at <Tools> <Blocked Events / Security Logs> for troubleshooting.

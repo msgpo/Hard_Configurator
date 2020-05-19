@@ -1,0 +1,35 @@
+IsMshta.exeBlocked
+IsMstsc.exeBlocked
+IsWmic.exeBlocked
+
+;********* Beginning of ini section *********
+
+SKIN=MAmbre
+ListColor=14671585
+White List
+Skip DLLs
+ON
+ON
+OFF
+OFF
+
+OFF
+OFF
+Standard User
+ON
+OFF
+ON
+ON
+ON
+ON
+ON1
+OFF
+OFF
+Adobe + VBA
+ON
+END
+
+;********* Beginning of profile info section *********
+
+Harden Windows while maintaining maximum functionality and compatibility. Please note: this profile is intended to be used with Configure Defender High Protection Level. It allows EXE files to execute.
+On Standard User type of account, application installations and updating are disabled. These actions can be done only on Admin type of account.

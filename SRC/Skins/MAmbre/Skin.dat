@@ -1,0 +1,20 @@
+[Info]
+Title = MAmbre
+Author = Michel_Claveau
+;dérivé de Universal (de Big Daddy)
+
+[color]
+background=-1
+Button=0xE1E1E0
+mouseover=0xE8E8D8
+fontcolor=Black
+ListwievColor=0xE1E1E1
+
+[settings]
+size=10
+
+[icon]
+style=MAmbre
+Isize=22
+adjustleft=35
+adjustdown=5

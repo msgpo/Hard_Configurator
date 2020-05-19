@@ -1,0 +1,14 @@
+<Enforcement> button changes the Enforcement options between:
+'Skip DLLs' -> 'All Files' -> 'No Enforcement'
+The above settings tell SRP which files should be monitored. For file blocking, SRP uses additional rules and 'Default Security Level' settings. 
+
+'Skip DLLs' can control file execution by extension (Designated File Types), provides extended protection for scripts (BAT, CMD, JS, JSE, VBE, VBS, WSF, WSH), MSI installers, and native Windows executables (COM, EXE, SCR).
+This setting is default in Hard_Configurator, because it is most usable for the average users.  
+
+'All Files' setting, additionally turns on the extended protection of binary libraries (DLL, OCX) due to LoadLibrary API function. This setting is the most restrictive one, so may sometimes result in performance degradation and can crash Edge in older version of Windows 10. 
+Before using 'All Files' setting, the user should first analyze autoruns in the User Space (see <Tools> button). Those autoruns and related DLLs (in the User Space), should be whitelisted.
+With 'All Files' setting, you may consider also, turning on Advanced SRP Logging from <Tools> menu. 
+
+'No Enforcement' option can control only scripts (BAT, CMD, JS, JSE, VBE, VBS, WSF, WSH) and MSI files due to 'Windows CMD', 'Windows Script Host', and 'Windows Installer'. The other files are not monitored (for example COM, EXE, SCR, etc.). File blocking (if monitored) can be applied by the combined 'Disallowed\Unrestricted' path rules.
+
+See 'Hard_Configurator - Manual.pdf' for more help.

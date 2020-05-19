@@ -1,0 +1,12 @@
+1. The actual status of all restrictions is shown in 2 panels, on the left and the right side of GUI window. Please, do not forget to press <APPLY CHANGES> red button to finally apply the changes in the configuration settings.
+
+2. Press <Recommended Settings> green button to recover Hard_Configurator default-deny protection. This will delete all previous settings except entries added by the user to the Whitelist (by path or by hash). You can adjust SRP settings when pressing buttons in the left panel, and non-SRP settings by pressing buttons in the right panel. 
+
+3. Press <ConfigureDefender> violet button to configure Windows Defender advanced settings.
+
+4. Press <Firewall Hardening> to harden Windows Firewall, by preventing the Internet access to some Windows programs.
+
+5. There are two 3-D buttons visible on the bottom of Main Menu Window: <Load Profile> and <Save Profile>, which can be used to load other hardcoded program settings, or save user favorite settings (except White List profiles and Designated File Types). 
+
+click the NEXT button to continue ...
+or click <DOCUMENTATION> button and open Hard_Configurator - Manual, for more extensive help.

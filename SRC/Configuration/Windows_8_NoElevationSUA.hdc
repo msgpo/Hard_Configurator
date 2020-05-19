@@ -1,0 +1,43 @@
+IsPowerShellBlocked
+IsPowerShell_iseBlocked
+
+;********* Beginning of ini section *********
+
+SKIN=MAmbre
+ListColor=14671585
+White List
+Skip DLLs
+ON
+ON
+OFF
+ON
+
+OFF
+ON
+Administrator
+ON
+OFF
+ON
+OFF
+ON
+ON
+ON1
+ON
+OFF
+ON
+OFF
+END
+
+;********* Beginning of profile info section *********
+
+No Elevation Hardened SUA on Windows 8 and 8.1.
+
+This setting profile is prepared for a two account security solution: daily work on the Standard User Account (SUA), and admin work on Administrator Account (AA). 
+
+In the 'No Elevation Hardened SUA', applications cannot (auto)elevate when started as standard user on SUA. The user can open documents, media, photos, etc., and run previously installed applications. But, there is no possibility to run/install new programs when working on SUA. 
+
+Only system processes and system scheduled tasks can run with high privileges when working on SUA. So, all the admin work like: installing & updating programs, running programs with elevation, etc., must be done on Administrator Account. 
+
+For the security reasons, the script execution (PowerShell, Windows Script Host) is disabled globally on all accounts. 
+The user can still use the PowerShell console on Administrator Account, when running PowerShell as administrator.
+The WSH scripts (JS, JSE, VBE, VBS, WSF, WSH) can be executed on Administrator Account via elevated CMD console.

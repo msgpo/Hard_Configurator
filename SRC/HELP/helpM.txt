@@ -1,0 +1,7 @@
+<MSI Elevation> button, adds/removes 'Run as administrator' option in Explorer context menu, for MSI files.
+It is visible in Explorer context menu only when <Hide 'Run As Administrator'> option is set to 'OFF'.
+Normally, 'Run as administrator' is combined with COM, EXE, BAT files, but not with MSI files. It can be useful when SRP is activated (MSI files are blocked by default). Then, one can bypass SRP, choosing 'Run as administrator' from the right-click Explorer context menu.
+This option is included in Recommended Settings only when SRP is installed. 
+
+
+See 'Hard_Configurator - Manual.pdf' for more help.

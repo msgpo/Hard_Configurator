@@ -1,0 +1,5 @@
+In this program, SRP is used as a simple default-deny/whitelisting protection, that is based on Windows built-in security features. Executables can be run without SRP restrictions in the System Space, that contains UAC protected folders: 'Windows' and 'Program Files' (and 'Program Files (x86)' in 64Bit versions). Outside of those folders (= User Space), executables will be blocked by default. The list of monitored file extensions (Designated File Types) can be accessed by pressing <Designated File Types> button. 
+
+SRP can also apply extended security to Windows native executables (COM, EXE, SCR), binary libraries (DLL, OCX), scripts (BAT, CMD, JS, JSE, VBE, VBS, WSF, WSH), and MSI installers. This is possible by calling into Safer APIs from: CreateProcess API, LoadLibrary API, Windows CMD, Windows Script Host, and Windows Installer.
+
+See 'Hard_Configurator - Manual.pdf' for more help.

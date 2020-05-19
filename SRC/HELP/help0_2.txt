@@ -1,0 +1,13 @@
+9. The Recommended Settings can give users a pretty good, set and forget security setup. Please keep <Run As Smartscreen> = 'Administrator' to safely bypass Default Deny SRP.
+There is no need to turn off Recommended Settings to install Windows Updates and perform system Scheduled Tasks.
+
+10. In the Recommended Settings, almost all programs can be run as usual. New programs can be installed by using 'Run As SmartScreen' option from the right-click Explorer context menu. Downloaded programs cannot be run from the Web Browser. They should be saved, and then 'Run As SmartScreen' from the DOWNLOAD folder. Portable applications located outside 'Windows' and 'Program Files ...' folders, can be whitelisted by hash (or by path), and then run as usual.
+
+11. Hard_Configurator works on Windows Vista and higher versions. When configured on any account, the changes apply to all accounts on the computer (except a few whitelisted autoruns in HKCU Registry Hive).
+It is assumed that 'Windows' and 'Program Files ...' folders are protected by UAC. It is not recommended to completely disable UAC - in the last resort, UAC notifications can be set to minimum.
+
+Look for more information at the @askalan website:
+https://hard-configurator.com/
+There's also a thread about Hard_Configurator on Malwaretips forum:
+https://malwaretips.com/threads/hard_configurator
+-windows-hardening-configurator.66416/

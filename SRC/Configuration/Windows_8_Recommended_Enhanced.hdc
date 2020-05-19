@@ -1,0 +1,53 @@
+IsPowerShellBlocked
+IsPowerShell_iseBlocked
+Isbitsadmin.exeBlocked
+IsCsc.exeBlocked
+Ishh.exeBlocked
+Isieexec.exeBlocked
+Isiexplore.exeBlocked
+IsInstallUtil.exeBlocked
+IsMsBuild.exeBlocked
+Ismshta.exeBlocked
+IsPresentationHost.exeBlocked
+Isreg.exeBlocked
+Isregini.exeBlocked
+IsRegSvcs.exeBlocked
+Iswmic.exeBlocked
+Isbash.exeBlocked
+IsRegAsm*Blocked
+Isschtasks.exeBlocked
+Iswindbg.exeBlocked
+Isforfiles.exeBlocked
+Issc.exeBlocked
+
+;********* Beginning of ini section *********
+
+SKIN=MAmbre
+ListColor=14671585
+White List
+Skip DLLs
+ON
+ON
+OFF
+ON
+
+ON
+ON
+Administrator
+ON
+OFF
+ON
+OFF
+OFF3
+ON
+ON1
+ON
+OFF
+ON
+OFF
+END
+
+;********* Beginning of profile info section *********
+
+This profile is prepared for Windows 8 and higher versions. It applies all Recommended Settings (including SRP) and additionally blocks some vulnerable sponsors which are commonly abused.
+Rarely, those sponsors can be used by the legal software, so it is recommended to look at <Tools> <Blocked Events / Security Logs> for troubleshooting.

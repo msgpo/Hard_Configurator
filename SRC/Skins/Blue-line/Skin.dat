@@ -1,0 +1,14 @@
+[Info]
+Title = Blue-line
+Author = Valuater
+
+[color]
+;background=0xA9D4FF
+background=0xC2D1CC
+Button= 0xF5F4EF
+mouseover= 0xD6E7FF
+ListwievColor=0xAEC6BC
+
+[settings]
+size=20
+

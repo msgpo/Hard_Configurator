@@ -1,0 +1,38 @@
+IsPowerShellBlocked
+IsPowerShell_iseBlocked
+
+;********* Beginning of ini section *********
+
+SKIN=MAmbre
+ListColor=14671585
+White List
+Skip DLLs
+ON
+ON
+OFF
+ON
+
+OFF
+OFF
+OFF
+ON
+OFF
+ON
+OFF
+OFF3
+ON
+ON1
+ON
+OFF
+ON
+ON
+END
+
+;********* Beginning of profile info section *********
+
+Recommended settings (SRP included) + allow EXE files.
+
+This profile is prepared to work with Windows 8 / 8.1 and Avast antivirus set to Hardened Aggressive mode. Hard_Configurator settings allow running any EXE file in the Userspace, but those files are then checked by Avast reputation cloud.
+For the security reasons, the script execution (PowerShell, Windows Script Host) is disabled globally on all accounts. 
+The user can still use the PowerShell console on Administrator Account, when running PowerShell as administrator.
+The WSH scripts (JS, JSE, VBE, VBS, WSF, WSH) can be executed on Administrator Account via elevated CMD console.

@@ -1,0 +1,18 @@
+'Run As SmartScreen' and 'Run By SmartScreen' options are not designed to run files from the root 'c:\' location, because in the User Space the location has to allow write access as standard user, but root 'c:\' requires Administrative Rights. 
+
+(A) Keep the 'Administrator' setting when SRP is activated. If so, the users can safely:
+1. Run programs (with a mouse click or pressing ENTER button) which have been already installed in the System Space or put on the Whitelist.
+2. Open the media files, documents, and other file types, which are not on the 'Designated File Types' list.
+3. Install new programs from the User Space by using 'Run As SmartScreen' option from Explorer context menu (only EXE and MSI files). This option additionally forces the file to ask for execution with Administrative Rights.
+
+(B) Advanced users can apply (as an alternative to (A) ) the below settings with Default Deny SRP : 
+Apply Recommended Settings, and next change <Run As SmartScreen> to 'Standard User' and <Hide 'Run As Administrator> to 'OFF'. Then, 'Run By SmartScreen' + SRP can serve as a second opinion scanner for executables located in the User Space. 
+In the (B) solution the user should always use first 'Run By SmartScreen' option from the right-click Explorer context menu to check all new files. 
+
+The main difference between (A) and (B) solutions is that in (A), the new application installers (EXE and MSI files) are allowed to run if accepted by SmartScreen, but instead, they are always blocked in (B) when 'Run By SmartScreen' is used. In (B) the user has to use additionally 'Run as administrator' from the Explorer context menu to run application installers.
+In (A) 'Run As SmartScreen' can replace 'Run By SmartScreen' + 'Run as administrator'.
+
+(C) Keep the 'Standard User' setting and set <Hide 'Run As Administrator> to 'OFF' for using ‘Run By SmartScreen’, when SRP is deactivated. 
+‘Run By SmartScreen’ option in Explorer context menu does not automatically elevate the rights of the executed program. 
+
+See 'Hard_Configurator - Manual.pdf' for more help.

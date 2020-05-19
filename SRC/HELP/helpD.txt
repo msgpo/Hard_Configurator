@@ -1,0 +1,16 @@
+<Hide 'Run As Administrator'> button hides/shows 'Run as administrator'
+option in Explorer context menu. It is useful when you choose to replace
+this option by 'Run As SmartScreen'. 
+Set <Hide 'Run As Administrator'> to "ON" if <Run As SmartScreen> is set 
+to 'Administrator'. 
+Otherwise, it is better to turn <Hide 'Run As Administrator'> 'OFF'.
+
+REMARKS
+
+When <Hide 'Run As Administrator'> is set to 'ON', then 'Command Prompt 
+(Administrator)' option in Windows Power Menu, and 'Run as administrator'
+option in the Search context menu, are hidden too. 
+Yet, in the Search context menu, one can use 'Open file location', and then
+use 'Run As SmartScreen' to run executables (EXE and MSI).
+
+See 'Hard_Configurator - Manual.pdf' for more help.
